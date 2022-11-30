@@ -1,0 +1,1 @@
+void openFileAndModify(char textFile[], char targetString[]);

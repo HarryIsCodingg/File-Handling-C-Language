@@ -1,0 +1,1 @@
+void traverseFiles(const char *directoryName, char targetString[]);
