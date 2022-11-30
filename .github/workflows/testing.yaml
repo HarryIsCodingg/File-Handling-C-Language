@@ -10,7 +10,10 @@ jobs:
     container:
       image: hsinghineat/harrypipeline
     steps:
-      - name: check-output-for-c-language
+      - name: copying the code from the repository
+        uses: actions/checkout@v3
+      - name: running the code
         run: |
+          ls -all
           gcc report.c replace.c traversal.c text.c
           a lorem
