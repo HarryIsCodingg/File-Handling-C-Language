@@ -10,7 +10,7 @@ int main(int argc, char **argv)
   DIR *directory = opendir(".");
 
   traverseFiles(".", argv[1]);
-
+  printf("hello harry from the github actions...!!");
   printf("\nSearch begins in currrent folder: %s\n\n", (directory->dd_name));
   printReport();
 }
