@@ -1,0 +1,16 @@
+name: Testing Comp348 assignment
+
+on:
+   push:
+   workflow_dispatch:
+     
+jobs:
+  testing-assignment-output:
+    runs-on: ubuntu-latest
+    container:
+      image: hsinghineat/harrypipeline
+    steps:
+      - name: check-output-for-c-language
+        run: |
+          gcc report.c replace.c traversal.c text.c
+          a lorem
